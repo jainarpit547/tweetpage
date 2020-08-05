@@ -1,0 +1,122 @@
+body{
+    background-color: #f2f6ff;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+#wrapper{
+    padding: 20px 120px;
+}
+header {
+    text-align: center;
+    font-size: 20px;
+    background-color: #4682b4;
+    box-shadow: 0px 2px 6px #000;
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topbar{
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 1px;
+    font-family: monospace;
+    border: 1px solid black;
+    padding: 5px 15px;
+    border-radius: 5px;
+ }
+#username{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+} 
+#name{
+    width: 50%;
+}
+#name>h1{
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 40px;
+}
+#name>p{
+    margin-top: 10px;
+}
+#name>p>span{
+    font-weight: bolder;
+}
+button{
+    font-weight: 700;
+    color: black;
+    letter-spacing: 1px;
+    border: 1px solid black;
+    padding: 10px 15px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.line{
+    background-color: grey;
+    height: 3px;
+    width: 100%;
+    margin-top: 70px;
+}
+.tweet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:20px ;
+}
+.tweet>img{
+    height: 130px;
+    cursor: pointer;
+}
+.tweet>p{
+    width: 50%;
+}
+#tweetWrapper{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tweetWrapper>h2{
+    text-align: center;
+    margin: 40px 0px 60px 0px;
+}
+@media(max-width:600px){
+    #wrapper{
+        padding: 0px;
+    }
+    #username{
+        display: block;
+        width: unset;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #name{
+        width: unset;
+    }
+    #tweetWrapper{
+        width: unset;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .tweet{
+        display: block;
+        margin-bottom: 65px;
+    }
+    .tweet>p{
+        width: unset;
+    }
+    .tweet>img{
+        margin-left: 60px;
+    }
+}
